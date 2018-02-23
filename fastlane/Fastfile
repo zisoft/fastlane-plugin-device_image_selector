@@ -1,0 +1,5 @@
+lane :test do
+  device_image_selector(name_prefixes: ["iPhone X","iPad Pro (12.9-inch)"])
+  frame_screenshots(path: "fastlane/screenshots/device_images")
+  device_image_selector_cleanup()
+end

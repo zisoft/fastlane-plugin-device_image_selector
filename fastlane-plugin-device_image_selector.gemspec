@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'mail@zisoft.de'
 
   spec.summary       = 'Takes the screenshots from devices which matches the specified names and puts them in a new directory for frameit to process. The screenshot files can then be cleaned up after the device images are created.'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-device_image_selector"
+  spec.homepage      = "https://github.com/zisoft/fastlane-plugin-device_image_selector"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)

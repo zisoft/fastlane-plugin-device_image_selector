@@ -12,7 +12,7 @@ fastlane add_plugin device_image_selector
 
 ## About device_image_selector
 
-After creating hundrets of screenshots for the AppStore you probably want to use only a few of them with device frames, i.e. to put them on your website. Instead of running 'frameit' on the whole screenshots directory this plugin selects only the screenshots you want to use and puts them into the output directory. Running 'frameit' on this directory produces the device images. After that, the screenshot files can automatically be deleted by running the cleanup action. So the Fastfile may look like this:
+After creating hundreds of screenshots for the AppStore you probably want to use only a few of them with device frames, i.e. to put them on your website. Instead of running 'frameit' on the whole screenshots directory this plugin selects only the screenshots you want to use and puts them into the output directory. Running 'frameit' on that directory produces the device images. After that, the screenshot files can automatically be deleted by running the cleanup action. So the Fastfile may look like this:
 
     
     desc "Generate device images"

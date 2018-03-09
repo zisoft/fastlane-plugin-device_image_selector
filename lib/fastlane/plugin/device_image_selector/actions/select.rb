@@ -6,11 +6,11 @@ module Fastlane
     module SharedValues
       DEVICE_IMAGE_SELECTOR_FILES = :DEVICE_IMAGE_SELECTOR_FILES
     end
-
+    
     class DeviceImageSelectorAction < Action
       def self.run(params)
         Dir.mkdir(params[:output_directory]) unless Dir.exists?(params[:output_directory])
-
+        
         files = []
 
         Dir.entries(params[:screenshot_directory]).each do |entry|
@@ -63,7 +63,7 @@ module Fastlane
 
       def self.details
         # Optional:
-        "Takes the device screenshots which matches the specified names and puts them in the output directory for frameit to process. The screenshot files can then be cleaned up after the device images are created."
+        "Takes the device screenshots which match the specified names and puts them in the output directory for frameit to process. The screenshot files can then be cleaned up after the device images are created."
       end
 
       def self.available_options
